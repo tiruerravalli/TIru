@@ -23,6 +23,13 @@ repositories {
 	mavenCentral()
 }
 
+jar{
+    manifest{
+        attributes ("Fw-Version" : version, "")
+
+    }
+     'Tiru_Spring_Example.jar'
+}
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
